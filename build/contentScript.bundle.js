@@ -1,0 +1,1 @@
+window.addEventListener("message",(e=>{e.source===window&&"DECENTRL_REQUEST_IDENTITY_AUTHORIZATION"===e.data.type&&chrome.runtime.sendMessage(e.data)}),!1),window.decentrl="hello there!",chrome.runtime.onMessage.addListener(((e,s)=>{window.postMessage(e)}));
